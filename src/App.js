@@ -1,23 +1,40 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
+import Welcome from './components/Welcome';
+import Signup from './components/SignUp';
+import SignIn from './components/SignIn';
+import Account from './components/Account';
 import './App.css';
 
 function App() {
+  const [page, setPage] = useState('')
+
+  useEffect(() => {
+    document.title = "Welcome - Educase PopX";
+  })
+
+  const pageHandler = authPage => {
+    setPage(authPage)
+  }
+
+  let content;
+  switch (page) {
+    case 'signup':
+      content = <Signup pageHandler={pageHandler} />;
+      break;
+    case 'signin':
+      content = <SignIn pageHandler={pageHandler} />;
+      break;
+    case 'account':
+      content = <Account pageHandler={pageHandler} />;
+      break;
+    default:
+      content = <Welcome pageHandler={pageHandler} />;
+      break;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg-white h-screen m-0'>
+      {content}
     </div>
   );
 }

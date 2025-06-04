@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# 📱 PopX React JS Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a pixel-perfect React JS implementation of the PopX mobile interface, built based on the [Adobe XD design](https://xd.adobe.com/view/b68eea25-003d-4a5d-8fdd-d463eeb20b32-e3dd). The app features smooth navigation, responsive design, and is optimized for mobile screen sizes, centered within desktop viewports.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+🌐 [View Deployed App on Vercel](https://educase-popx-smp.vercel.app)  
+📁 [View GitHub Repository](https://github.com/selva-mern12/educase-popx-assignment)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎯 Features
 
-### `npm test`
+- ✔️ **Pixel-perfect UI** based on the Adobe XD prototype  
+- ✔️ **Mobile-centered layout**, responsive and visually consistent across screen sizes  
+- ✔️ **Seamless navigation** between Welcome, Signup, Login, and Account pages  
+- ✔️ Built with **Tailwind CSS** for modern and maintainable styling  
+- ✔️ Modular component structure for clean code organization  
+- ✔️ **Hosted on Vercel** for fast and accessible deployment  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React JS**
+- **Tailwind CSS**
+- **Deployed on Vercel**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 Folder Structure
 
-### `npm run eject`
+```
+popx-react-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Welcome.js
+│   │   ├── Signup.js
+│   │   ├── Login.js
+│   │   └── Account.js
+│   ├── App.js
+│   └── index.js
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json
+└── README.md
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🧑‍💻 Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 1. Clone the Repository
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/selva-mern12/educase-popx-assignment
+cd popx-react-app
+```
 
-## Learn More
+### 2. Install Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3. Start Development Server
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🧾 Adobe XD Design
 
-### Making a Progressive Web App
+You can view the original design prototype here:  
+🔗 [Adobe XD Link](https://xd.adobe.com/view/b68eea25-003d-4a5d-8fdd-d463eeb20b32-e3dd)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📋 Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- All inputs use `onClick` handlers for form logic (not `onSubmit`) per assignment restriction.
+- Responsive only up to `max-width: 400px` to simulate mobile screen dimensions.
+- Transitions and animations added using Tailwind's `animate-*` utilities.
+- Uses `className` instead of `class` in JSX as required.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📦 Deployment
 
-### `npm run build` fails to minify
+Deployed on **Vercel**. For your own deployment:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Push your code to GitHub
+2. Connect your repository to [Vercel](https://vercel.com/)
+3. Deploy directly with default settings
+
+---
+
+## ✅ Assignment Checklist
+
+- ✔️ Pixel-perfect design implementation  
+- ✔️ Responsive layout  
+- ✔️ Navigation between pages  
+- ✔️ Hosted on Vercel  
+- ✔️ Public GitHub repo with this README  
+
+---
+
+## 📧 Contact
+
+For any questions, reach out at:  
+📩 yourname@example.com  
+🔗 [LinkedIn Profile](https://linkedin.com/in/selva-mern)
+
+---
